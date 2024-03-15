@@ -27,5 +27,5 @@ app.post("/signup", (req, res) => {
 
 // Start server
 app.listen(6500, () => {
-  console.log("Server started on port 3000");
+  console.log("Server started on port 6500");
 });
