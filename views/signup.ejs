@@ -2,8 +2,72 @@
 <html>
 <head>
     <title>Sign Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+    
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc1c1;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #5033df;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #236e2e;
+        }
+    </style>
 </head>
 <body>
-    <h1>Sign Up!</h1>
-    <a href="/signup">Sign up</a>
+    <h1>Sign Up</h1>
+    <form id="signupForm">
+        <label for="signupUsername">Username:</label>
+        <input type="text" id="signupUsername" name="username" required>
+        <label for="signupEmail">Email:</label>
+        <input type="email" id="signupEmail" name="email" required>
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="password" required>
+        <label for="signupConfirmPassword">Confirm Password:</label>
+        <input type="password" id="signupConfirmPassword" name="confirmpassword" required>
+        <button type="submit">Sign up</button>
+    </form>
+    <script src="script.js"></script>
 </body>
